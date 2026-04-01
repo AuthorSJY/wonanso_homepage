@@ -327,7 +327,7 @@ function App() {
 
       {/* 푸터 */}
       <footer className="footer">
-        <p>&copy; 2024 원안소. All rights reserved.</p>
+        <p>&copy; 2026 원안소. All rights reserved.</p>
       </footer>
     </div>
   );
