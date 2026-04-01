@@ -1,0 +1,695 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.App {
+  width: 100%;
+}
+
+/* ========== 섹션 1: 히어로 ========== */
+.hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.hero .sub-copy {
+  font-size: 1rem;
+  max-width: 600px;
+  line-height: 1.8;
+}
+
+/* ========== 섹션 2: 4대 불가 원칙 ========== */
+.cannot-do {
+  padding: 80px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.cannot-do h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.cannot-do h3 {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.principles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto 50px;
+}
+
+.principle {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.principle h4 {
+  font-size: 1.3rem;
+  color: #667eea;
+  margin-bottom: 15px;
+}
+
+.principle p {
+  color: #666;
+  line-height: 1.8;
+}
+
+.promise {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* ========== 섹션 3: 확실히 해주는 것 ========== */
+.can-do {
+  padding: 80px 20px;
+  background-color: white;
+}
+
+.can-do h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #667eea;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature {
+  padding: 30px;
+  background: #f8f9fa;
+  border-left: 4px solid #667eea;
+  border-radius: 4px;
+}
+
+.feature h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.feature p {
+  color: #666;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+/* ========== 섹션 4: 출력물 명세서 ========== */
+.output-spec {
+  padding: 80px 20px;
+  background-color: #f8f9fa;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.output-spec h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.spec-warning {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  border-left: 4px solid #ff6b6b;
+  margin-bottom: 50px;
+}
+
+.spec-warning h4 {
+  font-size: 1.2rem;
+  color: #ff6b6b;
+  margin-bottom: 15px;
+}
+
+.spec-warning p {
+  color: #666;
+  line-height: 1.8;
+}
+
+.spec-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.spec-item {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.spec-item h4 {
+  font-size: 1.2rem;
+  color: #667eea;
+  margin-bottom: 20px;
+}
+
+.spec-item ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.spec-item ul li {
+  padding: 10px 0;
+  padding-left: 20px;
+  color: #666;
+  position: relative;
+}
+
+.spec-item ul li:before {
+  content: "•";
+  color: #667eea;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.spec-note {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  font-size: 0.9rem;
+  color: #999;
+  font-style: italic;
+}
+
+/* ========== 섹션 5: 개발 리스크 감리 공정 ========== */
+.risk-audit {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-align: center;
+}
+
+.risk-audit h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.risk-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.risk-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.risk-content p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.risk-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 8px;
+  margin: 30px 0;
+  backdrop-filter: blur(10px);
+}
+
+.risk-box p {
+  margin-bottom: 15px;
+}
+
+.risk-box p:last-child {
+  margin-bottom: 0;
+}
+
+/* ========== 섹션 6: 이런 경우엔 필요 없습니다 ========== */
+.not-needed {
+  padding: 80px 20px;
+  background-color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.not-needed h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.checklist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.check-item {
+  background: #fff3cd;
+  padding: 25px;
+  border-radius: 8px;
+  border-left: 4px solid #ffc107;
+  text-align: left;
+}
+
+.checklist.positive .check-item {
+  background: #d4edda;
+  border-left-color: #28a745;
+}
+
+.check-item p {
+  color: #333;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* ========== 섹션 7: 이런 상황에서는 필요해집니다 ========== */
+.is-needed {
+  padding: 80px 20px;
+  background-color: #f8f9fa;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.is-needed h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* ========== 섹션 8: 가격 정책 ========== */
+.pricing {
+  padding: 80px 20px;
+  background-color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pricing h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #333;
+}
+
+.pricing-item {
+  margin-bottom: 50px;
+  padding: 30px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.pricing-item h3 {
+  font-size: 1.4rem;
+  color: #667eea;
+  margin-bottom: 10px;
+}
+
+.pricing-desc {
+  font-size: 0.9rem;
+  color: #999;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.pricing-table {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  border-bottom: 1px solid #eee;
+}
+
+.table-row.header {
+  background-color: #667eea;
+  color: white;
+  font-weight: 600;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.table-cell {
+  padding: 15px;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.table-row.header .table-cell {
+  color: white;
+}
+
+.pricing-note {
+  font-size: 0.9rem;
+  color: #999;
+  margin-top: 15px;
+  font-style: italic;
+}
+
+.pricing-footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #999;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #eee;
+}
+
+/* ========== 섹션 9: 발주 프로세스 ========== */
+.process {
+  padding: 80px 20px;
+  background-color: #f8f9fa;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.process h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #333;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.step {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.step-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #667eea;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.step p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.process-info {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+  margin-bottom: 30px;
+}
+
+.process-info h4 {
+  color: #667eea;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.process-info p {
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.process-caution {
+  background: #fff3cd;
+  padding: 30px;
+  border-radius: 8px;
+  border-left: 4px solid #ffc107;
+}
+
+.process-caution h4 {
+  color: #856404;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.process-caution ul {
+  list-style: none;
+  padding: 0;
+}
+
+.process-caution ul li {
+  padding: 10px 0;
+  padding-left: 25px;
+  color: #666;
+  position: relative;
+  font-size: 0.95rem;
+}
+
+.process-caution ul li:before {
+  content: "✓";
+  color: #ffc107;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* ========== 섹션 10: CTA ========== */
+.cta {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  line-height: 1.4;
+}
+
+.cta-button {
+  background-color: white;
+  color: #667eea;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button:active {
+  transform: translateY(0);
+}
+
+/* ========== 섹션 11: 포트폴리오 ========== */
+.portfolio {
+  padding: 80px 20px;
+  background-color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.portfolio-placeholder {
+  font-size: 1.1rem;
+  color: #999;
+  font-style: italic;
+}
+
+/* ========== 푸터 ========== */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.9rem;
+}
+
+/* ========== 반응형 디자인 (휴대폰) ========== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .cannot-do h2,
+  .can-do h2,
+  .output-spec h2,
+  .risk-audit h2,
+  .not-needed h2,
+  .is-needed h2,
+  .pricing h2,
+  .process h2,
+  .portfolio h2,
+  .cta h2 {
+    font-size: 1.8rem;
+  }
+
+  .principles,
+  .features,
+  .spec-items,
+  .checklist,
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-button {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+
+  .step-number {
+    font-size: 2rem;
+  }
+
+  .table-row {
+    grid-template-columns: 1fr;
+  }
+
+  .price {
+    font-size: 1.5rem;
+  }
+
+  .risk-audit {
+    padding: 60px 20px;
+  }
+
+  .risk-content p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 60px 20px;
+    min-height: 400px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+
+  .cannot-do h2,
+  .can-do h2,
+  .output-spec h2,
+  .risk-audit h2,
+  .not-needed h2,
+  .is-needed h2,
+  .pricing h2,
+  .process h2,
+  .portfolio h2,
+  .cta h2 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 50px 15px;
+  }
+
+  .pricing-item,
+  .process-info,
+  .process-caution {
+    padding: 20px;
+  }
+
+  .process-steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
